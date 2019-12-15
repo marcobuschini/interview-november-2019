@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
-import { Vendor } from 'widget';
+import { WidgetComponent, Vendor } from 'widget';
 
 @Component({
   selector: 'app-root',
@@ -17,4 +17,5 @@ export class AppComponent {
       { name: 'feature 2' },
       { name: 'feature 3' }
   ]};
+  @Input('widget') widget: WidgetComponent
 }

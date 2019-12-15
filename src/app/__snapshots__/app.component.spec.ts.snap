@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppComponent should create 1`] = `
+<app-root
+  title={[Function String]}
+  vendor={[Function Object]}
+  widget={[Function WidgetComponent]}
+>
+  <parking-widget
+    _nghost-a-c0=""
+    ng-reflect-vendor="[object Object]"
+  >
+    <mat-card
+      _ngcontent-a-c0=""
+      class="mat-card"
+    >
+      <mat-list
+        _ngcontent-a-c0=""
+        class="mat-list mat-list-base"
+        role="list"
+      >
+        
+        <mat-list-item
+          _ngcontent-a-c0=""
+          class="mat-list-item"
+          role="listitem"
+        >
+          <div
+            class="mat-list-item-content"
+          >
+            <div
+              class="mat-list-item-ripple mat-ripple"
+              mat-ripple=""
+              ng-reflect-disabled="true"
+              ng-reflect-trigger="[object HTMLUnknownElement]"
+            />
+            <div
+              class="mat-list-text"
+            />
+            Feature 1 
+          </div>
+        </mat-list-item>
+        <mat-list-item
+          _ngcontent-a-c0=""
+          class="mat-list-item"
+          role="listitem"
+        >
+          <div
+            class="mat-list-item-content"
+          >
+            <div
+              class="mat-list-item-ripple mat-ripple"
+              mat-ripple=""
+              ng-reflect-disabled="true"
+              ng-reflect-trigger="[object HTMLUnknownElement]"
+            />
+            <div
+              class="mat-list-text"
+            />
+            Feature 2 
+          </div>
+        </mat-list-item>
+        <mat-list-item
+          _ngcontent-a-c0=""
+          class="mat-list-item"
+          role="listitem"
+        >
+          <div
+            class="mat-list-item-content"
+          >
+            <div
+              class="mat-list-item-ripple mat-ripple"
+              mat-ripple=""
+              ng-reflect-disabled="true"
+              ng-reflect-trigger="[object HTMLUnknownElement]"
+            />
+            <div
+              class="mat-list-text"
+            />
+            Feature 3 
+          </div>
+        </mat-list-item>
+      </mat-list>
+      <mat-divider
+        _ngcontent-a-c0=""
+        aria-orientation="horizontal"
+        class="mat-divider mat-divider-horizontal"
+        role="separator"
+      />
+      <div
+        _ngcontent-a-c0=""
+        fxlayout="row"
+        fxlayout.xs="column"
+        fxlayoutalign="space-between"
+      >
+        
+        <div
+          _ngcontent-a-c0=""
+        >
+           SLot 1 
+          <mat-list
+            _ngcontent-a-c0=""
+            class="mat-list mat-list-base"
+            role="list"
+          >
+            
+            <mat-list-item
+              _ngcontent-a-c0=""
+              class="mat-list-item"
+              role="listitem"
+            >
+              <div
+                class="mat-list-item-content"
+              >
+                <div
+                  class="mat-list-item-ripple mat-ripple"
+                  mat-ripple=""
+                  ng-reflect-disabled="true"
+                  ng-reflect-trigger="[object HTMLUnknownElement]"
+                />
+                <div
+                  class="mat-list-text"
+                />
+                Feature 1 
+              </div>
+            </mat-list-item>
+            <mat-list-item
+              _ngcontent-a-c0=""
+              class="mat-list-item"
+              role="listitem"
+            >
+              <div
+                class="mat-list-item-content"
+              >
+                <div
+                  class="mat-list-item-ripple mat-ripple"
+                  mat-ripple=""
+                  ng-reflect-disabled="true"
+                  ng-reflect-trigger="[object HTMLUnknownElement]"
+                />
+                <div
+                  class="mat-list-text"
+                />
+                Feature 2 
+              </div>
+            </mat-list-item>
+          </mat-list>
+        </div>
+      </div>
+    </mat-card>
+  </parking-widget>
+</app-root>
+`;

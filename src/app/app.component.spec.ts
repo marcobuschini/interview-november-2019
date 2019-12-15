@@ -1,31 +1,73 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, ComponentFixture, fakeAsync, flush } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { WidgetComponent, Vendor, ParkingSlot } from 'widget';
+import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { of } from 'rxjs';
 
 describe('AppComponent', () => {
-  beforeEach(async(() => {
+  let fixture: ComponentFixture<AppComponent>;
+  let component: AppComponent;
+  
+  const dummyVendor: Vendor = {
+    name: 'Test Vendor',
+    description: 'This is a test vendor',
+    features: [
+      { name: 'Feature 1' },
+      { name: 'Feature 2' },
+      { name: 'Feature 3' }
+    ]
+  };
+
+  const dummySlots: ParkingSlot[] = [
+    {
+      id: 0,
+      name: 'SLot 1',
+      features: [
+        'Feature 1',
+        'Feature 2'
+      ]
+    }
+  ]
+
+  beforeEach(async () => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        WidgetComponent,
+      ],
+      imports: [
+        MatCardModule,
+        MatDividerModule,
+        MatListModule,
+        HttpClientTestingModule,
       ],
     }).compileComponents();
-  }));
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
-  });
+    fixture = TestBed.createComponent(AppComponent);
+    fixture.componentInstance.widget = TestBed.createComponent(WidgetComponent).componentInstance;
 
-  it(`should have as title 'atSistemas-interview'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('atSistemas-interview');
-  });
+    let vendorSpy = jest.spyOn(fixture.componentInstance.widget.service, 'getVendorFeatures')
+      .mockReturnValue(of(dummyVendor.features));
+    let slotsSpy = jest.spyOn(fixture.componentInstance.widget.service, 'getParkingSlots')
+      .mockReturnValue(of(dummySlots));
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
+    component = fixture.componentInstance;
+    component.widget.ngOnInit();
     fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('atSistemas-interview app is running!');
   });
+
+  afterEach(() => {
+    component.widget.ngOnDestroy();
+  });
+
+  it('should create', fakeAsync(() => {
+    expect(component).toBeTruthy();
+
+    flush();
+
+    expect(fixture).toMatchSnapshot();
+  }));
 });
