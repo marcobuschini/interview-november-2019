@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 
 import { WidgetComponent, Vendor } from 'widget';
 
@@ -7,9 +7,9 @@ import { WidgetComponent, Vendor } from 'widget';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'atSistemas-interview';
-  vendor: Vendor = {
+export class AppComponent implements OnInit {
+  public title = 'interview-november-2019';
+  public vendor: Vendor = {
     name: 'Test Vendor',
     description: 'This is a test vendor',
     features: [
@@ -17,5 +17,10 @@ export class AppComponent {
       { name: 'feature 2' },
       { name: 'feature 3' }
   ]};
-  @Input('widget') widget: WidgetComponent
+  @ViewChild('widget', { static: true })
+  public widget: WidgetComponent;
+
+  public ngOnInit() {
+    this.widget.vendor = this.vendor;
+  }
 }
