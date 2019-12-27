@@ -1,6 +1,6 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
 
-import { WidgetComponent, Vendor } from 'widget';
+import { WidgetComponent, Vendor, Feature } from 'widget';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +16,8 @@ export class AppComponent implements OnInit {
       { name: 'feature 1' },
       { name: 'feature 2' },
       { name: 'feature 3' }
-  ]};
+    ] as Feature[]
+  };
   @ViewChild('widget', { static: true })
   public widget: WidgetComponent;
 
