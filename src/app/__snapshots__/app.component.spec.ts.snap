@@ -6,7 +6,7 @@ exports[`AppComponent should create 1`] = `
   vendor={[Function Object]}
   widget={[Function WidgetComponent]}
 >
-  <parking-widget
+  <mlb-parking-widget
     _nghost-a-c0=""
     ng-reflect-vendor="[object Object]"
   >
@@ -92,12 +92,16 @@ exports[`AppComponent should create 1`] = `
         fxlayout="row"
         fxlayout.xs="column"
         fxlayoutalign="space-between"
+        ng-reflect-fx-layout="row"
+        ng-reflect-fx-layout-align="space-between"
+        ng-reflect-fx-layout.xs="column"
+        style="box-sizing: border-box; display: flex; flex-direction: row; align-content: stretch; align-items: stretch; justify-content: space-between;"
       >
         
         <div
           _ngcontent-a-c0=""
         >
-           SLot 1 
+           Slot 1 
           <mat-list
             _ngcontent-a-c0=""
             class="mat-list mat-list-base"
@@ -148,6 +152,6 @@ exports[`AppComponent should create 1`] = `
         </div>
       </div>
     </mat-card>
-  </parking-widget>
+  </mlb-parking-widget>
 </app-root>
 `;
