@@ -14,143 +14,160 @@ exports[`AppComponent should create 1`] = `
       _ngcontent-a-c0=""
       class="mat-card"
     >
-      <mat-list
+      <mat-card-title
         _ngcontent-a-c0=""
-        class="mat-list mat-list-base"
-        role="list"
+        class="mat-card-title"
       >
-        
-        <mat-list-item
-          _ngcontent-a-c0=""
-          class="mat-list-item"
-          role="listitem"
-        >
-          <div
-            class="mat-list-item-content"
-          >
-            <div
-              class="mat-list-item-ripple mat-ripple"
-              mat-ripple=""
-              ng-reflect-disabled="true"
-              ng-reflect-trigger="[object HTMLUnknownElement]"
-            />
-            <div
-              class="mat-list-text"
-            />
-            Feature 1 
-          </div>
-        </mat-list-item>
-        <mat-list-item
-          _ngcontent-a-c0=""
-          class="mat-list-item"
-          role="listitem"
-        >
-          <div
-            class="mat-list-item-content"
-          >
-            <div
-              class="mat-list-item-ripple mat-ripple"
-              mat-ripple=""
-              ng-reflect-disabled="true"
-              ng-reflect-trigger="[object HTMLUnknownElement]"
-            />
-            <div
-              class="mat-list-text"
-            />
-            Feature 2 
-          </div>
-        </mat-list-item>
-        <mat-list-item
-          _ngcontent-a-c0=""
-          class="mat-list-item"
-          role="listitem"
-        >
-          <div
-            class="mat-list-item-content"
-          >
-            <div
-              class="mat-list-item-ripple mat-ripple"
-              mat-ripple=""
-              ng-reflect-disabled="true"
-              ng-reflect-trigger="[object HTMLUnknownElement]"
-            />
-            <div
-              class="mat-list-text"
-            />
-            Feature 3 
-          </div>
-        </mat-list-item>
-      </mat-list>
-      <mat-divider
+        Test Vendor
+      </mat-card-title>
+      <mat-card-subtitle
         _ngcontent-a-c0=""
-        aria-orientation="horizontal"
-        class="mat-divider mat-divider-horizontal"
-        role="separator"
-      />
-      <div
-        _ngcontent-a-c0=""
-        fxlayout="row"
-        fxlayout.xs="column"
-        fxlayoutalign="space-between"
-        ng-reflect-fx-layout="row"
-        ng-reflect-fx-layout-align="space-between"
-        ng-reflect-fx-layout.xs="column"
-        style="box-sizing: border-box; display: flex; flex-direction: row; align-content: stretch; align-items: stretch; justify-content: space-between;"
+        class="mat-card-subtitle"
       >
-        
+        This is a test vendor
+      </mat-card-subtitle>
+      <mat-card-content
+        _ngcontent-a-c0=""
+        class="mat-card-content"
+      >
+        <mat-list
+          _ngcontent-a-c0=""
+          class="mat-list mat-list-base"
+          role="list"
+        >
+          
+          <mat-list-item
+            _ngcontent-a-c0=""
+            class="mat-list-item"
+            role="listitem"
+          >
+            <div
+              class="mat-list-item-content"
+            >
+              <div
+                class="mat-list-item-ripple mat-ripple"
+                mat-ripple=""
+                ng-reflect-disabled="true"
+                ng-reflect-trigger="[object HTMLUnknownElement]"
+              />
+              <div
+                class="mat-list-text"
+              />
+              Feature 1 
+            </div>
+          </mat-list-item>
+          <mat-list-item
+            _ngcontent-a-c0=""
+            class="mat-list-item"
+            role="listitem"
+          >
+            <div
+              class="mat-list-item-content"
+            >
+              <div
+                class="mat-list-item-ripple mat-ripple"
+                mat-ripple=""
+                ng-reflect-disabled="true"
+                ng-reflect-trigger="[object HTMLUnknownElement]"
+              />
+              <div
+                class="mat-list-text"
+              />
+              Feature 2 
+            </div>
+          </mat-list-item>
+          <mat-list-item
+            _ngcontent-a-c0=""
+            class="mat-list-item"
+            role="listitem"
+          >
+            <div
+              class="mat-list-item-content"
+            >
+              <div
+                class="mat-list-item-ripple mat-ripple"
+                mat-ripple=""
+                ng-reflect-disabled="true"
+                ng-reflect-trigger="[object HTMLUnknownElement]"
+              />
+              <div
+                class="mat-list-text"
+              />
+              Feature 3 
+            </div>
+          </mat-list-item>
+        </mat-list>
+        <mat-divider
+          _ngcontent-a-c0=""
+          aria-orientation="horizontal"
+          class="mat-divider mat-divider-horizontal"
+          role="separator"
+        />
         <div
           _ngcontent-a-c0=""
+          fxlayout="row"
+          fxlayout.xs="column"
+          fxlayoutalign="space-between"
+          ng-reflect-fx-layout="row"
+          ng-reflect-fx-layout-align="space-between"
+          ng-reflect-fx-layout.xs="column"
+          style="box-sizing: border-box; display: flex; flex-direction: row; align-content: stretch; align-items: stretch; justify-content: space-between;"
         >
-           Slot 1 
-          <mat-list
+          
+          <div
             _ngcontent-a-c0=""
-            class="mat-list mat-list-base"
-            role="list"
           >
-            
-            <mat-list-item
+             Slot 1 
+            <mat-list
               _ngcontent-a-c0=""
-              class="mat-list-item"
-              role="listitem"
+              class="mat-list mat-list-base"
+              role="list"
             >
-              <div
-                class="mat-list-item-content"
+              
+              <mat-list-item
+                _ngcontent-a-c0=""
+                class="mat-list-item"
+                role="listitem"
               >
                 <div
-                  class="mat-list-item-ripple mat-ripple"
-                  mat-ripple=""
-                  ng-reflect-disabled="true"
-                  ng-reflect-trigger="[object HTMLUnknownElement]"
-                />
-                <div
-                  class="mat-list-text"
-                />
-                Feature 1 
-              </div>
-            </mat-list-item>
-            <mat-list-item
-              _ngcontent-a-c0=""
-              class="mat-list-item"
-              role="listitem"
-            >
-              <div
-                class="mat-list-item-content"
+                  class="mat-list-item-content"
+                >
+                  <div
+                    class="mat-list-item-ripple mat-ripple"
+                    mat-ripple=""
+                    ng-reflect-disabled="true"
+                    ng-reflect-trigger="[object HTMLUnknownElement]"
+                  />
+                  <div
+                    class="mat-list-text"
+                  />
+                  Feature 1 
+                </div>
+              </mat-list-item>
+              <mat-list-item
+                _ngcontent-a-c0=""
+                class="mat-list-item"
+                role="listitem"
               >
                 <div
-                  class="mat-list-item-ripple mat-ripple"
-                  mat-ripple=""
-                  ng-reflect-disabled="true"
-                  ng-reflect-trigger="[object HTMLUnknownElement]"
-                />
-                <div
-                  class="mat-list-text"
-                />
-                Feature 2 
-              </div>
-            </mat-list-item>
-          </mat-list>
+                  class="mat-list-item-content"
+                >
+                  <div
+                    class="mat-list-item-ripple mat-ripple"
+                    mat-ripple=""
+                    ng-reflect-disabled="true"
+                    ng-reflect-trigger="[object HTMLUnknownElement]"
+                  />
+                  <div
+                    class="mat-list-text"
+                  />
+                  Feature 2 
+                </div>
+              </mat-list-item>
+            </mat-list>
+          </div>
         </div>
-      </div>
+      </mat-card-content>
     </mat-card>
   </mlb-parking-widget>
 </app-root>
