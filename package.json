@@ -25,7 +25,7 @@
     "hammerjs": "^2.0.8",
     "rxjs": "^6.5.3",
     "tslib": "^1.10.0",
-    "widget": "file:../temp/parking-widget/dist/widget",
+    "widget": "file:./temp/parking-widget/dist/widget",
     "zone.js": "^0.9.1"
   },
   "devDependencies": {
