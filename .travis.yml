@@ -18,6 +18,7 @@ install:
   - npm install
   - ng build widget
   - cd ../..
+  - rm -rf node_modules/widget
   - cp -R temp/parking-widget/dist/widget node_modules/widget
   - rm -rf temp
   - sudo chown -R $USER node_modules/widget
