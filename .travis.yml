@@ -11,7 +11,6 @@ cache:
     - ./node_modules
 
 install:
-  - npm install
   - mkdir temp
   - cd temp
   - git clone https://github.com/marcobuschini/parking-widget.git
@@ -20,6 +19,7 @@ install:
   - ng build widget
   - cp -R dist/widget ../node_modules
   - cd ..
+  - npm install
 
 script:
   - ng test --coverage  --coverageReporters=text-lcov | node node_modules/coveralls/bin/coveralls.js
