@@ -1,0 +1,10 @@
+[
+    {
+        "id": 0,
+        "name": "Slot 1",
+        "features": [
+            "Feature 1",
+            "Feature 2"
+        ]
+    }
+]
