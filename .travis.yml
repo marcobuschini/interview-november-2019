@@ -18,7 +18,7 @@ install:
   - npm install
   - ng build widget
   - cp -R dist/widget ../node_modules
-  - cd ..
+  - cd ../..
   - npm install
 
 script:
