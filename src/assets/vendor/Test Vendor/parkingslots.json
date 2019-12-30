@@ -6,5 +6,21 @@
             "Feature 1",
             "Feature 2"
         ]
+    },
+    {
+        "id": 1,
+        "name": "Slot 2",
+        "features": [
+            "Feature 1",
+            "Feature 2"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Slot 3",
+        "features": [
+            "Feature 1",
+            "Feature 2"
+        ]
     }
 ]
