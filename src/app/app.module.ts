@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { WidgetModule } from 'widget';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { WidgetModule } from 'widget';
   imports: [
     BrowserModule,
     WidgetModule,
+    MatListModule,
     BrowserAnimationsModule
   ],
   providers: [],
