@@ -6,10 +6,12 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { of } from 'rxjs';
+import { By } from '@angular/platform-browser';
 
 describe('AppComponent', () => {
   let fixture: ComponentFixture<AppComponent>;
   let component: AppComponent;
+  let addSpy: jest.SpyInstance;
 
   const dummyVendor: Vendor = {
     name: 'Test Vendor',
@@ -53,6 +55,7 @@ describe('AppComponent', () => {
       .mockReturnValue(of(dummyVendor.features));
     const slotsSpy = jest.spyOn(fixture.componentInstance.widget.service, 'getParkingSlots')
       .mockReturnValue(of(dummySlots));
+    addSpy = jest.spyOn(fixture.componentInstance, 'addToCart');
 
     component = fixture.componentInstance;
     component.widget.ngOnInit();
@@ -63,10 +66,18 @@ describe('AppComponent', () => {
     component.widget.ngOnDestroy();
   });
 
-  it('should create', fakeAsync(() => {
+  it('should create the application, and add an item to the cart', fakeAsync(() => {
     expect(component).toBeTruthy();
 
     flush();
+
+    expect(fixture).toMatchSnapshot();
+
+    const button = fixture.debugElement.queryAll(By.css('mlb-parking-widget button'))[0].nativeElement as HTMLButtonElement;
+    button.click();
+    fixture.detectChanges();
+
+    expect(addSpy).toHaveBeenCalled();
 
     expect(fixture).toMatchSnapshot();
   }));
