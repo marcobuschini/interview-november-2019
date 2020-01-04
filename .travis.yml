@@ -11,7 +11,7 @@ cache:
     - ./node_modules
 
 install:
-  - sh travis-instal.sh
+  - sh travis-install.sh
 
 script:
   - ng test --coverage  --coverageReporters=text-lcov | node node_modules/coveralls/bin/coveralls.js
