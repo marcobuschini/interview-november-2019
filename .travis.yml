@@ -11,18 +11,7 @@ cache:
     - ./node_modules
 
 install:
-  - mkdir temp
-  - cd temp
-  - git clone https://github.com/marcobuschini/parking-widget.git
-  - cd parking-widget
-  - npm install
-  - ng build widget
-  - cd ../..
-  - rm -rf node_modules/widget
-  - cp -R temp/parking-widget/dist/widget node_modules/widget
-  - rm -rf temp
-  - sudo chown -R $USER node_modules/widget
-  - npm install
+  - sh travis-instal.sh
 
 script:
   - ng test --coverage  --coverageReporters=text-lcov | node node_modules/coveralls/bin/coveralls.js
