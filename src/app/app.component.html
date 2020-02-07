@@ -1,4 +1,9 @@
 
+<mat-radio-group aria-label="{ Select a language | translate }" (change)="setLanguage($event.value)">
+    <mat-radio-button value="it_IT">English</mat-radio-button>
+    <mat-radio-button value="en_US">Italiano</mat-radio-button>
+</mat-radio-group>
+
 <mlb-parking-widget #widget [vendor]="vendor" (buying)="addToCart($event)"></mlb-parking-widget>
 
 <h2>Shopping cart</h2>
