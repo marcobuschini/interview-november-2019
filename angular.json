@@ -21,7 +21,12 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/widget/assets",
+                "output": "./assets/"
+              }
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
@@ -124,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "atSistemas-interview"
+  "defaultProject": "atSistemas-interview",
+  "cli": {
+    "analytics": "5da79b52-a0c1-44c3-b209-08d13964451c"
+  }
 }

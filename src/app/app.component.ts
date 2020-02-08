@@ -40,6 +40,7 @@ export class AppComponent implements OnInit {
 
   public setLanguage(lang: string) {
     console.log(lang);
+    this.loader.getTranslation(lang);
     this.translate.use(lang);
   }
 }
