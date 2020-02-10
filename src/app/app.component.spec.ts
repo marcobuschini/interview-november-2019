@@ -5,8 +5,16 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { TranslateTestingModule } from 'ngx-translate-testing';
 import { of } from 'rxjs';
 import { By } from '@angular/platform-browser';
+import {
+  TranslateModule,
+  MissingTranslationHandler,
+  MissingTranslationHandlerParams,
+  TranslateFakeLoader,
+  TranslateLoader
+} from '@ngx-translate/core';
 
 describe('AppComponent', () => {
   let fixture: ComponentFixture<AppComponent>;
@@ -34,6 +42,25 @@ describe('AppComponent', () => {
     }
   ];
 
+  const ENGLISH_LANGUAGE = 'en-US';
+  const ENGLISH_TRANSLATIONS = {
+    'Add to cart': 'Add to cart',
+    Collapse: 'Collapse',
+    Expand: 'Expand'
+};
+
+  const ITALIAN_LANGUAGE = 'es';
+  const ITALIAN_TRANSLATIONS = {
+    'Add to cart': 'Aggiungi al carrello',
+    Collapse: 'Riduci',
+    Expand: 'Espandi'
+  };
+
+  const TRANSLATIONS = {
+    [ENGLISH_LANGUAGE]: ENGLISH_TRANSLATIONS,
+    [ITALIAN_LANGUAGE]: ITALIAN_TRANSLATIONS
+  };
+
   beforeEach(async () => {
     TestBed.configureTestingModule({
       declarations: [
@@ -45,6 +72,7 @@ describe('AppComponent', () => {
         MatListModule,
         HttpClientTestingModule,
         WidgetModule,
+        TranslateTestingModule.withTranslations(TRANSLATIONS)
       ],
     }).compileComponents();
 
