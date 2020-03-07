@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WidgetModule } from 'widget';
 import { MatListModule } from '@angular/material/list';
 import { MatRadioModule } from '@angular/material/radio';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -18,8 +19,9 @@ import { MatRadioModule } from '@angular/material/radio';
     MatListModule,
     MatRadioModule,
     BrowserAnimationsModule,
+    TranslateModule,
   ],
-  providers: [],
+  providers: [TranslateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
